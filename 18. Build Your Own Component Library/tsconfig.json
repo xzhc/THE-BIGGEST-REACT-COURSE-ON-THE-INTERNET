@@ -6,7 +6,6 @@
     "strict": true,
     "skipLibCheck": true,
     "rootDir": ".",
-    "types": ["vitest/globals"],
 
     "jsx": "react",
     "module": "ESNext",
