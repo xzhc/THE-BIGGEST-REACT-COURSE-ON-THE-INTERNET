@@ -1,9 +1,23 @@
 # 📚 React 学习笔记导航
 
-> 这是我的 React 学习笔记索引，方便快速查找知识点
+> 你的学习笔记中心索引
 
 **学习开始日期：** 2025-10-21  
-**学习方式：** Codebase 驱动 + 实战改进
+**学习方式：** 手动配置 + 深度学习
+
+---
+
+## 🚀 快速入口
+
+### 开始学习
+- **[返回项目首页](../START-HERE.md)** - 从这里开始
+- **[完整学习流程](../docs/guides/LEARNING-WORKFLOW.md)** - 8 步学习流程（必读）
+- **[项目配置指南](../docs/guides/PROJECT-SETUP-GUIDE.md)** - 手动配置步骤
+
+### 日常使用
+- **[学习进度](progress.md)** - 追踪进度，每日更新
+- **[快速查询](quick-reference.md)** - 语法命令速查
+- **[常见错误](debugging/common-errors.md)** - 错误速查手册
 
 ---
 
@@ -19,56 +33,32 @@
 
 ---
 
-## 🎯 项目分析
+## 🎯 项目分析笔记
 
 ### 已完成
-- [Counter 项目分析](projects/counter-analysis.md) - useState 基础
-- [Zustand Notes App](projects/zustand-notes-app.md) - 状态管理实战
-- [Redux 电商项目](projects/redux-ecommerce.md) - 企业级状态管理
+- [Counter 项目分析](projects/counter-analysis.md) - useState 基础（示例）
 
-### 进行中
-- [ ] TanStack Query 项目
+### 模板
+- [项目分析模板](projects/PROJECT-TEMPLATE.md) - 复制使用
 
 ---
 
 ## 🐛 问题解决记录
 
-### 最近问题
-- [2025-10-21 - useState 类型错误](debugging/2025-10-21-typescript-error.md)
-- [常见错误速查手册](debugging/common-errors.md)
+### 常见问题
+- [常见错误速查手册](debugging/common-errors.md) - Ctrl+F 搜索错误信息
+
+### 问题记录
+- [调试记录模板](debugging/DEBUG-TEMPLATE.md) - 复制使用
 
 ---
 
 ## 💻 代码片段库
 
-- [自定义 Hooks 集合](snippets/custom-hooks.ts)
-- [常用模式代码](snippets/useful-patterns.tsx)
-- [配置文件模板](snippets/config-templates.js)
-
----
-
-## 📊 学习资源
-
-### 快速查询
-- [快速参考手册](quick-reference.md) - 命令、语法速查
-- [学习进度追踪](progress.md) - 每日记录、里程碑
-
-### 实验项目
-- [我的改进项目](../my-experiments/) - 基于课程的改进和创新
-
----
-
-## ⚙️ 环境配置
-
-**重要：** 大部分项目没有配置文件，需要自己搭建运行环境！
-
-- [环境配置完整指南](SETUP-ENVIRONMENT.md) - 三种运行方式详解
-- [一键创建模板](../CREATE-TEMPLATE.md) - 快速创建可复用模板
-- [配置文件模板](snippets/config-templates.js) - 各种配置文件模板
-
-**推荐方案：**
-1. 快速学习 → 使用 CodeSandbox 在线工具
-2. 本地开发 → 创建通用模板，复制使用
+### 可复用代码
+- [自定义 Hooks 集合](snippets/custom-hooks.ts) - 10+ 常用 Hooks
+- [常用模式代码](snippets/useful-patterns.tsx) - 8+ React 模式
+- [配置文件模板](snippets/config-templates.js) - 各种配置模板
 
 ---
 
@@ -76,42 +66,115 @@
 
 | 主题 | 相关笔记 |
 |------|---------|
-| **环境配置** | `SETUP-ENVIRONMENT.md`, `../CREATE-TEMPLATE.md` |
+| **项目配置** | `../docs/guides/PROJECT-SETUP-GUIDE.md` |
+| **学习流程** | `../docs/guides/LEARNING-WORKFLOW.md` |
 | **状态管理** | `concepts/hooks.md`, `concepts/state-management.md` |
-| **TypeScript** | `concepts/typescript-react.md`, `debugging/*typescript*` |
-| **性能优化** | `concepts/patterns.md#性能优化` |
-| **测试** | `projects/*-testing.md` |
+| **TypeScript** | `concepts/typescript-react.md` |
+| **设计模式** | `concepts/patterns.md` |
+| **错误排查** | `debugging/common-errors.md` |
 
 ---
 
-## 🎓 学习流程
+## 🎓 笔记使用指南
 
-**重要：** 如果你选择手动配置项目，想深入理解每个细节：
+### 创建新笔记
 
-- [完整学习流程指南](LEARNING-WORKFLOW.md) - **必读！**
-  - 8 步完整学习流程
-  - 每一步的详细操作指南
-  - 实验验证方法
-  - 时间分配建议
-  - 每日检查清单
+**使用 VS Code 快捷片段：**
+在 `.md` 文件中输入关键词 + Tab
 
-**推荐工作流：**
+| 快捷键 | 生成内容 |
+|--------|---------|
+| `project` | 📊 项目分析笔记模板 |
+| `debug` | 🐛 调试记录模板 |
+| `concept` | 💡 概念笔记模板 |
+| `daily` | 📅 每日学习记录 |
+
+### 笔记命名规范
+
 ```
-配置环境 → 阅读代码 → 实验验证 → 功能改进 
-   ↓
-记录笔记 → Git 提交 → 复盘总结 → 开始下一个
+projects/项目名-analysis.md          # 项目分析
+concepts/概念名.md                   # 概念笔记
+debugging/YYYY-MM-DD-问题描述.md     # 问题记录
 ```
+
+### 笔记写作要点
+
+1. **项目分析笔记**
+   - 项目功能和技术栈
+   - 架构设计分析
+   - 核心代码解析
+   - 你的改进
+   - 学到的知识
+
+2. **概念笔记**
+   - 基本用法
+   - 工作原理
+   - 常见陷阱
+   - 最佳实践
+   - 实验验证
+
+3. **问题记录**
+   - 完整错误信息
+   - 分析思路
+   - 解决方案
+   - 通用模式
 
 ---
 
-## 📝 笔记模板
+## 📊 学习统计
 
-需要记录新内容时，使用以下模板：
-- 概念学习 → 复制 `concepts/hooks.md` 的结构
-- 项目分析 → 复制 `projects/counter-analysis.md` 的结构
-- Bug 记录 → 使用 VS Code snippet: `debug`
+### 当前进度
+- **笔记篇数：** 待更新
+- **解决问题：** 待更新
+- **代码片段：** 30+
+- **学习天数：** 待更新
+
+**更新方式：** 定期在 `progress.md` 中更新
+
+---
+
+## 🔗 相关资源
+
+### 项目文档
+- **完整学习流程：** `../docs/guides/LEARNING-WORKFLOW.md`
+- **项目配置指南：** `../docs/guides/PROJECT-SETUP-GUIDE.md`
+- **快速开始：** `../START-HERE.md`
+
+### 实验代码
+- **我的改进项目：** `../my-experiments/`
+
+### 原课程代码
+- **基础项目：** `../01. Fundamentals/`
+- **Hooks 示例：** `../02. React Hooks/`
+- **新手项目：** `../03. Beginners Projects/`
+
+---
+
+## 💡 使用建议
+
+### 建立知识网络
+在笔记中添加交叉引用：
+```markdown
+**相关笔记：**
+- 概念：`concepts/hooks.md#useState`
+- 项目：`projects/todo-analysis.md`
+- 问题：`debugging/2025-10-21-state-issue.md`
+```
+
+### 定期回顾
+- 每周末回顾 `progress.md`
+- 每月整理 `quick-reference.md`
+- 提炼重要概念到笔记
+
+### 持续优化
+- 发现好的代码模式 → 添加到 `snippets/`
+- 遇到新的错误 → 记录到 `debugging/`
+- 理解新概念 → 记录到 `concepts/`
+
+---
+
+**开始记录你的学习之旅吧！** 📝
 
 ---
 
 **最后更新：** 2025-10-21
-
