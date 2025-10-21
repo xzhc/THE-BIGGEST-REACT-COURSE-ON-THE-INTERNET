@@ -30,7 +30,7 @@ docs/guides/LEARNING-WORKFLOW.md
 - 8 步完整学习流程
 - 每一步的详细操作指南
 - 思考要点和记录模板
-- 时间分配建议
+- 时间分配建议https://github.com/xzhc/THE-BIGGEST-REACT-COURSE-ON-THE-INTERNET
 - 实验验证方法
 
 **关键理念：**
