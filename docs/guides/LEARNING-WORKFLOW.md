@@ -14,13 +14,15 @@
 3. **记录 > 记忆** - 写下来比记住更可靠
 4. **改进 > 复制** - 自己的改进比原代码更有价值
 
-### 时间分配（每个项目）
+### 时间分配建议（每个项目）
 ```
 30% 配置环境（理解工程化）
 40% 阅读代码（理解原理）
 20% 改进项目（验证理解）
-10% 记录笔记（沉淀知识）
+10% 记录笔记（可选，只在有重要收获时记录）
 ```
+
+**重要：** 不要为了记笔记而记笔记，专注于学习本身
 
 ---
 
@@ -34,15 +36,9 @@
 - [ ] 需要哪些前置知识？
 - [ ] 预计学习时间多久？
 
-**记录位置：** `my-notes/progress.md`
-
-```markdown
-### 计划学习
-- [ ] 03. Beginners Projects/01. Counter
-  - 技术栈：React + useState
-  - 前置知识：JSX 基础
-  - 预计时间：2 小时
-```
+**建议：** 从简单的开始，逐步提升难度
+- 初学者：从 `03. Beginners Projects/` 开始
+- 已有基础：直接跳到感兴趣的主题
 
 ---
 
@@ -1232,42 +1228,23 @@ export function useCounter(initialValue = 0, step = 1) {
 **最后更新：** 2025-10-21
 ```
 
-#### 5.2 更新进度文件
+#### 5.2 提取可复用代码片段
 
-打开 `my-notes/progress.md`，添加：
+将学到的有价值的代码提取到 `my-notes/snippets/`：
 
-```markdown
-### 2025-10-21 (周一)
-**学习时间：** 4.5 小时
+```typescript
+// my-notes/snippets/custom-hooks.ts
 
-**完成内容：**
-- ✅ 配置 Counter 项目环境
-- ✅ 深度阅读 Counter 源码
-- ✅ 完成 4 个改进功能
-- ✅ 记录完整项目分析笔记
-
-**笔记输出：**
-- `projects/counter-analysis.md`
-
-**代码提交：**
-- `feat: Counter 添加步长控制功能`
-- `feat: Counter 添加历史记录功能`
-- `docs: 完成 Counter 项目分析笔记`
-
-**学到的关键点：**
-- useState 的异步特性和函数式更新
-- React 的单向数据流
-- 表单输入处理和验证
-- Vite 项目配置流程
-
-**遇到的问题：**
-- setState 的闭包陷阱 → 已解决（函数式更新）
-- 输入验证的最佳实践 → 需要继续学习
-
-**明天计划：**
-- 学习 useEffect
-- 配置 Todo 项目
-- 理解副作用处理
+// 可复用的计数器 Hook
+export function useCounter(initialValue = 0, step = 1) {
+  const [count, setCount] = useState(initialValue);
+  
+  const increment = () => setCount(prev => prev + step);
+  const decrement = () => setCount(prev => prev - step);
+  const reset = () => setCount(initialValue);
+  
+  return { count, increment, decrement, reset };
+}
 ```
 
 ---
@@ -1492,21 +1469,17 @@ Git 提交：5 分钟
 
 ---
 
-## 📋 每日学习检查清单
-
-打印出来，每天完成后打勾：
+## 📋 每个项目的学习检查清单
 
 ```
-□ 选择今天的项目
+□ 选择项目
 □ 配置项目环境（手动理解每一步）
 □ 深度阅读源码（写注释）
 □ 实验验证关键概念
 □ 至少添加 2 个改进
-□ 记录完整笔记
+□ 记录完整笔记（可选，只在有价值时记录）
 □ 提交到 Git（分批次提交）
 □ 复盘和总结
-□ 更新 progress.md
-□ 规划明天的项目
 ```
 
 ---
@@ -1552,10 +1525,10 @@ Git 提交：5 分钟
 
 ## 🔗 相关文档
 
-- **项目配置指南：** `PROJECT-SETUP-GUIDE.md`
+- **项目配置指南：** `docs/guides/PROJECT-SETUP-GUIDE.md`
 - **笔记模板：** VS Code 输入 `project` + Tab
-- **进度追踪：** `progress.md`
-- **快速查询：** `quick-reference.md`
+- **笔记索引：** `my-notes/INDEX.md`
+- **快速查询：** `my-notes/quick-reference.md`
 
 ---
 
