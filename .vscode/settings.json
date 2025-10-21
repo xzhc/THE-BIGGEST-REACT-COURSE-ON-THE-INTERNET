@@ -1,0 +1,93 @@
+{
+  // Markdown 相关设置
+  "markdown.preview.fontSize": 14,
+  "markdown.preview.lineHeight": 1.6,
+  
+  // 文件关联
+  "[markdown]": {
+    "editor.wordWrap": "on",
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    },
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "yzhang.markdown-all-in-one"
+  },
+  
+  // TypeScript/JavaScript 设置
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  
+  // 文件资源管理器
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/.git": false // 显示 .git 以便管理
+  },
+  
+  // TODO 高亮设置（需要 Todo Tree 插件）
+  "todo-tree.general.tags": [
+    "TODO",
+    "FIXME",
+    "NOTE",
+    "LEARN",
+    "REVIEW"
+  ],
+  "todo-tree.highlights.customHighlight": {
+    "TODO": {
+      "icon": "check",
+      "type": "text",
+      "foreground": "#FFEB3B"
+    },
+    "FIXME": {
+      "icon": "alert",
+      "type": "text",
+      "foreground": "#FF5252"
+    },
+    "NOTE": {
+      "icon": "note",
+      "type": "text",
+      "foreground": "#64B5F6"
+    },
+    "LEARN": {
+      "icon": "mortar-board",
+      "type": "text",
+      "foreground": "#9C27B0"
+    },
+    "REVIEW": {
+      "icon": "eye",
+      "type": "text",
+      "foreground": "#FFA726"
+    }
+  },
+  
+  // Git 设置
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  
+  // 搜索排除
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.next": true
+  },
+  
+  // 推荐的插件提示
+  "extensions.ignoreRecommendations": false
+}
+
