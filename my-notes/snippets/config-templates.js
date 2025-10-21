@@ -346,4 +346,3 @@ console.log(`
 - 配置 TypeScript：复制 tsConfig
 - 添加 Prettier：复制 prettierConfig
 `);
-

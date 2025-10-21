@@ -3,26 +3,25 @@
     // Markdown 支持
     "yzhang.markdown-all-in-one",
     "bierner.markdown-preview-github-styles",
-    
+
     // 代码格式化
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
-    
+
     // React/TypeScript 开发
     "dsznajder.es7-react-js-snippets",
     "bradlc.vscode-tailwindcss",
-    
+
     // Git 增强
     "eamodio.gitlens",
-    
+
     // 实用工具
     "gruntfuggly.todo-tree",
     "wayou.vscode-todo-highlight",
     "streetsidesoftware.code-spell-checker",
-    
+
     // 主题（可选）
     "GitHub.github-vscode-theme",
     "PKief.material-icon-theme"
   ]
 }
-

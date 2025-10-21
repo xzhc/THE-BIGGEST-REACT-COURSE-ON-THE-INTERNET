@@ -123,10 +123,37 @@ npm run dev
 
 ---
 
+## ⚠️ 重要：先配置运行环境！
+
+**大部分项目没有 `package.json`，不能直接运行！**
+
+### 三种解决方案（选一种）：
+
+**🌐 方案一：在线工具（最简单）**
+- 打开 https://codesandbox.io/
+- 创建 React 项目
+- 复制粘贴代码
+- 立即运行 ✨
+
+**💻 方案二：本地模板（推荐）**
+- 一次性创建通用模板
+- 以后复制使用
+- 详见：`my-notes/SETUP-ENVIRONMENT.md`
+
+**🔧 方案三：手动配置（学习用）**
+- 每个项目单独配置
+- 理解配置原理
+- 详见：`CREATE-TEMPLATE.md`
+
+**📖 详细说明：** 打开 `my-notes/SETUP-ENVIRONMENT.md`
+
+---
+
 ## 🔥 推荐的学习路径
 
 ### Week 1：基础入门
 ```
+Day 0: 配置运行环境（选择方案一或二）
 Day 1-2: Counter 项目 → 理解 useState
 Day 3-4: Todo 项目 → 理解 useEffect
 Day 5-7: 动画项目 → 理解 Framer Motion

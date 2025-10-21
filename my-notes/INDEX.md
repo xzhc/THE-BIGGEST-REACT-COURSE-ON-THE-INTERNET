@@ -58,10 +58,25 @@
 
 ---
 
+## ⚙️ 环境配置
+
+**重要：** 大部分项目没有配置文件，需要自己搭建运行环境！
+
+- [环境配置完整指南](SETUP-ENVIRONMENT.md) - 三种运行方式详解
+- [一键创建模板](../CREATE-TEMPLATE.md) - 快速创建可复用模板
+- [配置文件模板](snippets/config-templates.js) - 各种配置文件模板
+
+**推荐方案：**
+1. 快速学习 → 使用 CodeSandbox 在线工具
+2. 本地开发 → 创建通用模板，复制使用
+
+---
+
 ## 🔍 按主题查找
 
 | 主题 | 相关笔记 |
 |------|---------|
+| **环境配置** | `SETUP-ENVIRONMENT.md`, `../CREATE-TEMPLATE.md` |
 | **状态管理** | `concepts/hooks.md`, `concepts/state-management.md` |
 | **TypeScript** | `concepts/typescript-react.md`, `debugging/*typescript*` |
 | **性能优化** | `concepts/patterns.md#性能优化` |

@@ -2,7 +2,7 @@
   // Markdown 相关设置
   "markdown.preview.fontSize": 14,
   "markdown.preview.lineHeight": 1.6,
-  
+
   // 文件关联
   "[markdown]": {
     "editor.wordWrap": "on",
@@ -14,7 +14,7 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
-  
+
   // TypeScript/JavaScript 设置
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -32,21 +32,15 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true
   },
-  
+
   // 文件资源管理器
   "files.exclude": {
     "**/node_modules": true,
     "**/.git": false // 显示 .git 以便管理
   },
-  
+
   // TODO 高亮设置（需要 Todo Tree 插件）
-  "todo-tree.general.tags": [
-    "TODO",
-    "FIXME",
-    "NOTE",
-    "LEARN",
-    "REVIEW"
-  ],
+  "todo-tree.general.tags": ["TODO", "FIXME", "NOTE", "LEARN", "REVIEW"],
   "todo-tree.highlights.customHighlight": {
     "TODO": {
       "icon": "check",
@@ -74,11 +68,11 @@
       "foreground": "#FFA726"
     }
   },
-  
+
   // Git 设置
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
-  
+
   // 搜索排除
   "search.exclude": {
     "**/node_modules": true,
@@ -86,8 +80,7 @@
     "**/build": true,
     "**/.next": true
   },
-  
+
   // 推荐的插件提示
   "extensions.ignoreRecommendations": false
 }
-
