@@ -1,11 +1,11 @@
-import Greeting from "./DynamicContent/Greeting";
-import ProductInfo from "./DynamicContent/ProductInfo";
+import ProductList from "./ListofData/ProductList";
+import UserList from "./ListofData/UserList";
 
 const App = () => {
   return (
     <>
-      <Greeting />
-      <ProductInfo />
+      <UserList />
+      <ProductList />
     </>
   );
 };
