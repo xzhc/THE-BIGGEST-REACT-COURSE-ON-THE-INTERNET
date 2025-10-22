@@ -1,9 +1,13 @@
-import JSXRules from "./JSXRules/JSXRules";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import MainContent from "./components/MainContent";
 
 const App = () => {
   return (
     <>
-      <JSXRules />
+      <Header />
+      <MainContent />
+      <Footer />
     </>
   );
 };
