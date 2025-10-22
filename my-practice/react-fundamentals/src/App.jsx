@@ -1,10 +1,9 @@
-import Greet from "./components/Greet";
+import WelcomeMessage from "./JSX/WelcomeMessage";
 
 const App = () => {
   return (
     <>
-      <div>Component 🤝</div>
-      <Greet />
+      <WelcomeMessage />
     </>
   );
 };
