@@ -1,6 +1,5 @@
-import Person from "./Props/Person";
-import Product from "./Props/Product";
-
+import Person from "./PropsDestructuring/Person";
+import Product from "./PropsDestructuring/Product";
 const App = () => {
   return (
     <>
