@@ -1,15 +1,9 @@
-import { Counter } from "./State/Counter";
-import { Profile } from "./State/Profile";
-import { ShoppingList } from "./State/ShoppingList";
-import { TodoList } from "./State/TodoList";
+import { EventDemo } from "./Events/EventDemo";
 
 const App = () => {
   return (
     <div>
-      <Counter />
-      <TodoList />
-      <Profile />
-      <ShoppingList />
+      <EventDemo />
     </div>
   );
 };
