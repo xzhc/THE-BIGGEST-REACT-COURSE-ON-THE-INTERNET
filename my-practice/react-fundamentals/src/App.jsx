@@ -1,9 +1,10 @@
 import { EventDemo } from "./Events/EventDemo";
+import { CopyInput } from "./Portal/CopyInput";
 
 const App = () => {
   return (
     <div>
-      <EventDemo />
+      <CopyInput />
     </div>
   );
 };
