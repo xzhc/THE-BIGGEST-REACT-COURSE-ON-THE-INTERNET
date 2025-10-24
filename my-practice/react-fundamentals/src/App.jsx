@@ -1,10 +1,9 @@
-import { EventDemo } from "./Events/EventDemo";
-import { CopyInput } from "./Portal/CopyInput";
+import { Switcher } from "./AdvanceKeys/Swithcer";
 
 const App = () => {
   return (
     <div>
-      <CopyInput />
+      <Switcher />
     </div>
   );
 };
