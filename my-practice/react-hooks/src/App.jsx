@@ -1,7 +1,13 @@
+import { BasicEffect } from "./useEffect/BasicEffect";
+import { CounterEffect } from "./useEffect/CounterEffect";
+import { FetchDataEffect } from "./useEffect/FetchDataEffect";
+
 function App() {
   return (
     <>
-      <h1>react hooks</h1>
+      {/* <BasicEffect /> */}
+      {/* <CounterEffect /> */}
+      <FetchDataEffect />
     </>
   );
 }

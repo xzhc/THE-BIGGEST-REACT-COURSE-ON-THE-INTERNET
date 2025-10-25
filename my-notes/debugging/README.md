@@ -12,6 +12,12 @@
 - **难度**：⭐⭐ 初级
 - **关键词**：对象渲染、类型转换、工具函数
 
+### 2. [useEffect 异步数据获取的初始状态陷阱](./useEffect-Async-Data-Loading.md)
+- **错误类型**：Cannot read properties of undefined / is not a function
+- **知识点**：React 渲染时序、异步数据获取、状态设计、三态模式
+- **难度**：⭐⭐⭐ 中级
+- **关键词**：useEffect、loading 状态、初始值、渲染时间线、竞态条件
+
 ---
 
 ## 📖 使用说明
