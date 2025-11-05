@@ -1,20 +1,13 @@
-import { UpdateUser } from "./Context/UpdateUser";
-import { UserProvider } from "./Context/UserContext.jsX";
-import { UserProfile } from "./Context/UserProfile";
-import { BasicEffect } from "./useEffect/BasicEffect";
-import { CounterEffect } from "./useEffect/CounterEffect";
-import { FetchDataEffect } from "./useEffect/FetchDataEffect";
+import { CounterWithHistory } from "./useReducer/CounterWithHistory";
+import { CounterWithReducer } from "./useReducer/CounterWithReducer";
+import { CounterWithState } from "./useReducer/CounterWithState";
 
 function App() {
   return (
     <>
-      {/* <BasicEffect /> */}
-      {/* <CounterEffect /> */}
-      {/* <FetchDataEffect /> */}
-      <UserProvider>
-        <UserProfile />
-        <UpdateUser />
-      </UserProvider>
+      <CounterWithState />
+      <CounterWithReducer />
+      <CounterWithHistory />
     </>
   );
 }
