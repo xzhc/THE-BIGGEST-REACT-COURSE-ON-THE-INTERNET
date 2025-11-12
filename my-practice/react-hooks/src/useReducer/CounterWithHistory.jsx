@@ -1,4 +1,4 @@
-import { useReducer, useState } from "react";
+import { useReducer } from "react";
 
 //implement with useState
 // export function CounterWithHistory() {
