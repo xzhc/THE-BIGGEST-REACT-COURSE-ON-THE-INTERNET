@@ -1,16 +1,9 @@
-// import { CounterWithHistory } from "./useReducer/CounterWithHistory";
-// import { CounterWithReducer } from "./useReducer/CounterWithReducer";
-// import { CounterWithState } from "./useReducer/CounterWithState";
-import { LoginFormByState } from "./useReducer/LoginFormByState";
+import { SimpleExample } from "./useRef/SimpleExample";
 
 function App() {
   return (
     <>
-      {/* <CounterWithState />
-      <CounterWithReducer />
-      <CounterWithHistory /> */}
-
-      <LoginFormByState />
+      <SimpleExample />
     </>
   );
 }
